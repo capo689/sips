@@ -89,11 +89,11 @@ textarea {
 
 .brand img {
   width: 100%;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.38));
+  filter: invert(1) brightness(1.75) saturate(1.12) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.24));
 }
 
 .site-header.is-scrolled .brand img {
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.38));
+  filter: invert(1) brightness(1.75) saturate(1.12) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.24));
 }
 
 .nav-links {
@@ -392,12 +392,40 @@ h3 {
   line-height: 1.12;
 }
 
-.intro-band a {
+.intro-band a:not(.facebook-icon-link) {
   flex: 0 0 auto;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   border-bottom: 1px solid currentColor;
+}
+
+.facebook-icon-link {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--blue);
+  border: 1px solid var(--blue-line);
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(25, 118, 201, 0.1);
+  transition: color 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.facebook-icon-link:hover {
+  color: var(--blue-bright);
+  border-color: rgba(66, 170, 255, 0.58);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(25, 118, 201, 0.18);
+}
+
+.facebook-icon-link svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
 }
 
 .section {
@@ -825,7 +853,7 @@ textarea:focus {
 
 .footer-logo img {
   width: 100%;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.24));
+  filter: invert(1) brightness(1.75) saturate(1.12) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.24));
 }
 
 .site-footer p {
