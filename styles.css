@@ -864,10 +864,26 @@ textarea:focus {
 
 .site-footer nav {
   display: flex;
+  align-items: center;
   gap: 22px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+
+.site-footer nav a.footer-facebook-link::after {
+  display: none;
+}
+
+.footer-facebook-link {
+  width: 38px;
+  height: 38px;
+  box-shadow: none;
+}
+
+.footer-facebook-link svg {
+  width: 21px;
+  height: 21px;
 }
 
 .reveal {
