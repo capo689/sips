@@ -99,12 +99,12 @@ async function initThreeScene() {
   const group = new THREE.Group();
   scene.add(group);
 
-  const particleCount = 520;
+  const particleCount = 300;
   const positions = new Float32Array(particleCount * 3);
   const colors = new Float32Array(particleCount * 3);
-  const colorA = new THREE.Color("#bd9744");
-  const colorB = new THREE.Color("#3e6d4a");
-  const colorC = new THREE.Color("#cf8a52");
+  const colorA = new THREE.Color("#c4a35f");
+  const colorB = new THREE.Color("#f7f6f2");
+  const colorC = new THREE.Color("#8e98a0");
 
   for (let i = 0; i < particleCount; i += 1) {
     const stride = i * 3;
@@ -127,10 +127,10 @@ async function initThreeScene() {
   geometry.setAttribute("color", new THREE.BufferAttribute(colors, 3));
 
   const material = new THREE.PointsMaterial({
-    size: 0.045,
+    size: 0.036,
     vertexColors: true,
     transparent: true,
-    opacity: 0.72,
+    opacity: 0.34,
     depthWrite: false,
     blending: THREE.AdditiveBlending
   });
@@ -140,16 +140,16 @@ async function initThreeScene() {
 
   const ringGeometry = new THREE.TorusGeometry(2.7, 0.006, 8, 160);
   const ringMaterial = new THREE.MeshBasicMaterial({
-    color: "#bd9744",
+    color: "#c4a35f",
     transparent: true,
-    opacity: 0.34
+    opacity: 0.16
   });
   const rings = Array.from({ length: 4 }, (_, index) => {
     const ring = new THREE.Mesh(ringGeometry, ringMaterial.clone());
     ring.rotation.x = 1.16 + index * 0.19;
     ring.rotation.y = 0.28 + index * 0.36;
     ring.position.x = index * 0.24 - 0.42;
-    ring.material.opacity = 0.13 + index * 0.045;
+    ring.material.opacity = 0.06 + index * 0.025;
     group.add(ring);
     return ring;
   });
