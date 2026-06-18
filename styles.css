@@ -64,14 +64,17 @@ textarea {
   min-height: 78px;
   padding: 14px clamp(18px, 4vw, 54px);
   color: var(--ivory);
+  background: rgba(7, 8, 10, 0.86);
+  border-bottom: 1px solid rgba(247, 246, 242, 0.12);
+  box-shadow: 0 18px 54px rgba(7, 8, 10, 0.18);
+  backdrop-filter: blur(18px);
   transition: background 220ms ease, box-shadow 220ms ease, color 220ms ease;
 }
 
 .site-header.is-scrolled {
-  color: var(--ink);
-  background: rgba(251, 250, 246, 0.9);
-  box-shadow: 0 16px 50px rgba(7, 8, 10, 0.1);
-  backdrop-filter: blur(18px);
+  color: var(--ivory);
+  background: rgba(7, 8, 10, 0.94);
+  box-shadow: 0 16px 50px rgba(7, 8, 10, 0.28);
 }
 
 .brand {
@@ -83,11 +86,11 @@ textarea {
 .brand img,
 .site-footer img {
   width: 100%;
-  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
+  filter: invert(1) brightness(1.75) saturate(1.12) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.24));
 }
 
 .site-header.is-scrolled .brand img {
-  filter: none;
+  filter: invert(1) brightness(1.75) saturate(1.12) drop-shadow(0 8px 18px rgba(0, 0, 0, 0.24));
 }
 
 .nav-links {
