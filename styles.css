@@ -899,6 +899,15 @@ cite {
   backdrop-filter: blur(18px);
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  min-height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .form-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -974,6 +983,11 @@ textarea:focus {
   margin-top: 4px;
 }
 
+.form-submit[disabled] {
+  opacity: 0.62;
+  cursor: wait;
+}
+
 .form-note {
   margin: 0;
   color: rgba(247, 241, 231, 0.66);
@@ -983,6 +997,10 @@ textarea:focus {
 
 .form-note.is-success {
   color: var(--sage);
+}
+
+.form-note.is-error {
+  color: #ffd0d0;
 }
 
 .site-footer {

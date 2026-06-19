@@ -302,14 +302,45 @@ async function initHeroWebGL() {
 function initForm() {
   const form = document.querySelector("[data-rfp-form]");
   const note = document.querySelector("[data-form-note]");
+  const submit = form?.querySelector(".form-submit");
   if (!form || !note) return;
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const data = Object.fromEntries(new FormData(form).entries());
-    const name = data.name?.trim() || "Thanks";
-    note.textContent = `${name}, your request is drafted. Once this form is connected, this is where the proposal details will be sent.`;
-    note.classList.add("is-success");
+
+    if (!form.reportValidity()) return;
+
+    const formData = new FormData(form);
+    const name = formData.get("name")?.trim() || "Thanks";
+
+    note.textContent = "Sending your request...";
+    note.classList.remove("is-success", "is-error");
+    submit?.setAttribute("disabled", "disabled");
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    })
+      .then((response) => response.json().then((body) => ({ response, body })))
+      .then(({ response, body }) => {
+        if (!response.ok || !body.success) {
+          throw new Error(body.message || "Form submission failed.");
+        }
+
+        note.textContent = `${name}, your request has been sent. Sips will follow up with proposal details.`;
+        note.classList.add("is-success");
+        form.reset();
+      })
+      .catch(() => {
+        note.textContent = "Something did not send. Please call 541-255-8060 or try again in a moment.";
+        note.classList.add("is-error");
+      })
+      .finally(() => {
+        submit?.removeAttribute("disabled");
+      });
   });
 }
 

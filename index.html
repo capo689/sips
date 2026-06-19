@@ -434,7 +434,11 @@
           <span>Weddings</span>
         </div>
       </div>
-      <form class="rfp-form reveal" data-rfp-form>
+      <form class="rfp-form reveal" action="https://api.web3forms.com/submit" method="POST" data-rfp-form>
+        <input type="hidden" name="access_key" value="ccf725aa-c6ba-4139-a958-3330f4c7ea06">
+        <input type="hidden" name="subject" value="New Sips RFP Request">
+        <input type="hidden" name="from_name" value="Sips Cocktail Catering Website">
+        <input type="checkbox" class="form-honeypot" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="form-row">
           <label>
             <span>Name</span>
@@ -498,8 +502,8 @@
           <span>What should the proposal include?</span>
           <textarea name="message" rows="5" placeholder="Tell us about timing, venue rules, vibe, menu ideas, and anything the bar needs to support."></textarea>
         </label>
-        <button class="button primary form-submit" type="submit"><span>Prepare my request</span></button>
-        <p class="form-note" data-form-note>This draft stores nothing and sends nothing until the approved form is connected.</p>
+        <button class="button primary form-submit" type="submit"><span>Send request</span></button>
+        <p class="form-note" data-form-note>Sips will receive your request by email and reply with proposal details.</p>
       </form>
     </section>
   </main>
