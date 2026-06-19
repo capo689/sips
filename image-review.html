@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sips Image Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="review-page">
+  <header class="review-header">
+    <a class="brand review-brand" href="index.html" aria-label="Back to Sips home">
+      <img src="assets/logo/sips-logo.png" alt="Sips Cocktail Catering">
+    </a>
+    <div>
+      <h1>Image review</h1>
+      <p>Check the photos you want to use on the site.</p>
+    </div>
+    <a class="header-action review-home" href="index.html">Back to site</a>
+  </header>
+
+  <main class="image-review-main">
+    <section class="review-toolbar" aria-label="Selected images">
+      <div>
+        <span data-selected-count>0 selected</span>
+        <p data-selected-list>No images selected yet.</p>
+      </div>
+      <button class="button primary" type="button" data-copy-selected><span>Copy selections</span></button>
+    </section>
+
+    <section class="image-choice-grid" aria-label="Available images">
+      <label class="image-choice">
+        <input type="checkbox" value="1.jpg">
+        <span class="choice-control">Use image 1</span>
+        <img src="1.jpg" alt="Sips review image 1">
+        <span class="choice-name">1.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="2.jpg">
+        <span class="choice-control">Use image 2</span>
+        <img src="2.jpg" alt="Sips review image 2">
+        <span class="choice-name">2.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="3.jpg">
+        <span class="choice-control">Use image 3</span>
+        <img src="3.jpg" alt="Sips review image 3">
+        <span class="choice-name">3.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="4.jpg">
+        <span class="choice-control">Use image 4</span>
+        <img src="4.jpg" alt="Sips review image 4">
+        <span class="choice-name">4.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="5.jpg">
+        <span class="choice-control">Use image 5</span>
+        <img src="5.jpg" alt="Sips review image 5">
+        <span class="choice-name">5.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="6.jpg">
+        <span class="choice-control">Use image 6</span>
+        <img src="6.jpg" alt="Sips review image 6">
+        <span class="choice-name">6.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="7.jpg">
+        <span class="choice-control">Use image 7</span>
+        <img src="7.jpg" alt="Sips review image 7">
+        <span class="choice-name">7.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="8.jpg">
+        <span class="choice-control">Use image 8</span>
+        <img src="8.jpg" alt="Sips review image 8">
+        <span class="choice-name">8.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="9.jpg">
+        <span class="choice-control">Use image 9</span>
+        <img src="9.jpg" alt="Sips review image 9">
+        <span class="choice-name">9.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="10.jpg">
+        <span class="choice-control">Use image 10</span>
+        <img src="10.jpg" alt="Sips review image 10">
+        <span class="choice-name">10.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="11.jpg">
+        <span class="choice-control">Use image 11</span>
+        <img src="11.jpg" alt="Sips review image 11">
+        <span class="choice-name">11.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="12.jpg">
+        <span class="choice-control">Use image 12</span>
+        <img src="12.jpg" alt="Sips review image 12">
+        <span class="choice-name">12.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="13.jpg">
+        <span class="choice-control">Use image 13</span>
+        <img src="13.jpg" alt="Sips review image 13">
+        <span class="choice-name">13.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="14.jpg">
+        <span class="choice-control">Use image 14</span>
+        <img src="14.jpg" alt="Sips review image 14">
+        <span class="choice-name">14.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="15.jpg">
+        <span class="choice-control">Use image 15</span>
+        <img src="15.jpg" alt="Sips review image 15">
+        <span class="choice-name">15.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="16.jpg">
+        <span class="choice-control">Use image 16</span>
+        <img src="16.jpg" alt="Sips review image 16">
+        <span class="choice-name">16.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="17.jpg">
+        <span class="choice-control">Use image 17</span>
+        <img src="17.jpg" alt="Sips review image 17">
+        <span class="choice-name">17.jpg</span>
+      </label>
+      <label class="image-choice">
+        <input type="checkbox" value="18.jpg">
+        <span class="choice-control">Use image 18</span>
+        <img src="18.jpg" alt="Sips review image 18">
+        <span class="choice-name">18.jpg</span>
+      </label>
+    </section>
+  </main>
+
+  <script>
+    const storageKey = "sips-image-selections";
+    const inputs = Array.from(document.querySelectorAll(".image-choice input"));
+    const count = document.querySelector("[data-selected-count]");
+    const list = document.querySelector("[data-selected-list]");
+    const copyButton = document.querySelector("[data-copy-selected]");
+
+    function getSelected() {
+      return inputs.filter((input) => input.checked).map((input) => input.value);
+    }
+
+    function renderSelections() {
+      const selected = getSelected();
+      count.textContent = `${selected.length} selected`;
+      list.textContent = selected.length ? selected.join(", ") : "No images selected yet.";
+      localStorage.setItem(storageKey, JSON.stringify(selected));
+    }
+
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+      inputs.forEach((input) => {
+        input.checked = saved.includes(input.value);
+      });
+    } catch (error) {
+      localStorage.removeItem(storageKey);
+    }
+
+    inputs.forEach((input) => input.addEventListener("change", renderSelections));
+    copyButton.addEventListener("click", async () => {
+      const selected = getSelected();
+      const text = selected.join(", ");
+      if (!text) return;
+      await navigator.clipboard.writeText(text);
+      copyButton.querySelector("span").textContent = "Copied";
+      setTimeout(() => {
+        copyButton.querySelector("span").textContent = "Copy selections";
+      }, 1200);
+    });
+
+    renderSelections();
+  </script>
+</body>
+</html>
