@@ -792,6 +792,18 @@ label span {
   text-transform: uppercase;
 }
 
+.required-field em {
+  color: var(--blue-bright);
+  font-style: normal;
+}
+
+.required-field small {
+  margin-top: -2px;
+  color: rgba(247, 241, 231, 0.62);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
 input,
 select,
 textarea {

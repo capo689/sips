@@ -262,7 +262,7 @@
         <div class="form-row">
           <label>
             <span>Name</span>
-            <input name="name" autocomplete="name" required>
+            <input name="name" autocomplete="name">
           </label>
           <label>
             <span>Organization</span>
@@ -270,9 +270,10 @@
           </label>
         </div>
         <div class="form-row">
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" autocomplete="email" required>
+          <label class="required-field">
+            <span>Email <em>*</em></span>
+            <input type="email" name="email" autocomplete="email" aria-describedby="email-help" required>
+            <small id="email-help">Required so Sips can reply with proposal details.</small>
           </label>
           <label>
             <span>Phone</span>
@@ -282,7 +283,7 @@
         <div class="form-row">
           <label>
             <span>Event type</span>
-            <select name="eventType" required>
+            <select name="eventType">
               <option value="">Select one</option>
               <option>Corporate event</option>
               <option>Fundraiser</option>
