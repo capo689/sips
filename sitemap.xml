@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://sips-capo689s-projects.vercel.app/</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sips-capo689s-projects.vercel.app/assets/gallery/sips-11.jpg</image:loc>
+      <image:caption>Sips mobile bar catering setup for a corporate reception in Bend, Oregon.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sips-capo689s-projects.vercel.app/assets/gallery/sips-modern-bar.jpg</image:loc>
+      <image:caption>Modern indoor mobile bar setup for a Bend event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sips-capo689s-projects.vercel.app/assets/gallery/sips-glow-wall-wide.jpg</image:loc>
+      <image:caption>Central Oregon fundraiser bar catering setup with a glowing bottle wall.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sips-capo689s-projects.vercel.app/assets/gallery/sips-08.jpg</image:loc>
+      <image:caption>Sips event bartenders behind a stocked mobile bar in Central Oregon.</image:caption>
+    </image:image>
+  </url>
+</urlset>
