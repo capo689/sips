@@ -641,6 +641,7 @@ cite {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
+  grid-auto-flow: dense;
 }
 
 .gallery-item {
@@ -659,6 +660,22 @@ cite {
   height: auto;
   object-fit: cover;
   transition: transform 700ms ease;
+}
+
+.gallery-item.gallery-wide {
+  grid-column: span 2;
+}
+
+.gallery-item.gallery-wide img {
+  aspect-ratio: 1.9;
+}
+
+.gallery-item.gallery-tall {
+  grid-row: span 2;
+}
+
+.gallery-item.gallery-tall img {
+  aspect-ratio: 0.78;
 }
 
 .gallery-item:hover img {
@@ -718,7 +735,7 @@ cite {
   color: var(--paper);
   background:
     linear-gradient(120deg, rgba(6, 34, 56, 0.96), rgba(6, 34, 56, 0.72)),
-    url("11.jpg") center / cover fixed;
+    url("assets/gallery/sips-11.jpg") center / cover fixed;
 }
 
 .proposal-copy h2,
@@ -928,13 +945,17 @@ textarea:focus {
 
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: minmax(230px, 48vw);
   }
 
-  .gallery-item.wide,
-  .gallery-item.tall {
+  .gallery-item.gallery-wide,
+  .gallery-item.gallery-tall {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .gallery-item.gallery-wide img,
+  .gallery-item.gallery-tall img {
+    aspect-ratio: 1.08;
   }
 }
 
