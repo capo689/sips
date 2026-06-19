@@ -137,8 +137,28 @@ textarea {
   transform-origin: left;
 }
 
-.header-action {
+.header-ctas {
   justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-phone {
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0;
+  text-shadow: 0 8px 20px rgba(7, 8, 10, 0.28);
+  white-space: nowrap;
+  transition: color 180ms ease;
+}
+
+.header-phone:hover {
+  color: var(--blue-bright);
+}
+
+.header-action {
   display: inline-flex;
   align-items: center;
   min-height: 42px;
@@ -148,6 +168,10 @@ textarea {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.label-short {
+  display: none;
 }
 
 .hero {
@@ -740,12 +764,61 @@ cite {
 }
 
 .review-card {
+  position: relative;
   margin: 0;
-  padding: 26px;
+  padding: 34px 30px 28px;
   border: 1px solid var(--line);
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 18px 46px rgba(25, 118, 201, 0.06);
+  overflow: hidden;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(232, 244, 255, 0.52)),
+    #ffffff;
+  box-shadow: 0 20px 54px rgba(6, 34, 56, 0.08);
+}
+
+.review-card::before {
+  content: "\201C";
+  position: absolute;
+  top: -22px;
+  left: 20px;
+  color: rgba(25, 118, 201, 0.16);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 7.7rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.review-card::after {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(66, 170, 255, 0.18);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.review-card p {
+  position: relative;
+  margin-bottom: 18px;
+  color: var(--ink);
+  font-size: clamp(1.02rem, 1.2vw, 1.16rem);
+  font-weight: 600;
+  line-height: 1.58;
+}
+
+.review-card cite {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--blue);
+}
+
+.review-card cite::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: currentColor;
 }
 
 .proposal-section {
@@ -996,18 +1069,35 @@ textarea:focus {
 
 @media (max-width: 680px) {
   .site-header {
+    gap: 10px;
     min-height: 66px;
     padding: 12px 16px;
   }
 
   .brand {
-    width: 104px;
+    width: 98px;
+  }
+
+  .header-ctas {
+    gap: 8px;
+  }
+
+  .header-phone {
+    font-size: 0.72rem;
   }
 
   .header-action {
     min-height: 38px;
     padding-inline: 13px;
     font-size: 0.72rem;
+  }
+
+  .label-full {
+    display: none;
+  }
+
+  .label-short {
+    display: inline;
   }
 
   .hero {
