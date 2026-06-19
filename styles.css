@@ -106,7 +106,7 @@ textarea {
   display: flex;
   align-items: center;
   gap: clamp(16px, 3vw, 36px);
-  font-size: 0.73rem;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0;
   text-transform: uppercase;
