@@ -140,6 +140,20 @@ function initSmoothScroll() {
   });
 }
 
+function initDatePicker() {
+  const dateInput = document.querySelector("[data-date-input]");
+  const datePicker = document.querySelector("[data-date-picker]");
+  if (!dateInput || !datePicker) return;
+
+  datePicker.addEventListener("click", () => {
+    dateInput.focus();
+
+    if (typeof dateInput.showPicker === "function") {
+      dateInput.showPicker();
+    }
+  });
+}
+
 async function initHeroWebGL() {
   const canvas = document.querySelector("#brand-glow-scene");
   if (!canvas || prefersReduced) return;
@@ -353,4 +367,5 @@ window.addEventListener("load", () => {
 });
 
 initSmoothScroll();
+initDatePicker();
 initForm();

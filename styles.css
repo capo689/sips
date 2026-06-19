@@ -956,6 +956,48 @@ select {
   padding: 0 13px;
 }
 
+.date-control {
+  position: relative;
+  display: block;
+}
+
+.date-control input {
+  padding-right: 52px;
+}
+
+.date-picker-button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid rgba(66, 170, 255, 0.34);
+  border-radius: 4px;
+  color: var(--blue-bright);
+  background: rgba(66, 170, 255, 0.1);
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.date-picker-button:hover,
+.date-picker-button:focus-visible {
+  color: #ffffff;
+  border-color: rgba(66, 170, 255, 0.68);
+  background: rgba(66, 170, 255, 0.2);
+  outline: none;
+}
+
+.date-picker-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
 textarea {
   padding: 13px;
   resize: vertical;
