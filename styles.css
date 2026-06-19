@@ -998,6 +998,15 @@ textarea:focus {
   display: none;
 }
 
+.footer-phone {
+  color: rgba(247, 241, 231, 0.88);
+  transition: color 180ms ease;
+}
+
+.footer-phone:hover {
+  color: var(--blue-bright);
+}
+
 .footer-facebook-link {
   width: 38px;
   height: 38px;
