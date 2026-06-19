@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sips-capo689s-projects.vercel.app/sitemap.xml
+Sitemap: https://sipscocktailcatering.com/sitemap.xml
