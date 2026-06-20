@@ -687,10 +687,12 @@ cite {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   grid-auto-flow: dense;
+  align-items: start;
 }
 
 .gallery-item {
   position: relative;
+  align-self: start;
   min-width: 0;
   margin: 0;
   border-radius: 4px;
@@ -721,6 +723,10 @@ cite {
 
 .gallery-item.gallery-tall img {
   aspect-ratio: 0.78;
+}
+
+.gallery-item.gallery-portrait img {
+  aspect-ratio: 0.92;
 }
 
 .gallery-item:hover img {
