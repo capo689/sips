@@ -423,14 +423,15 @@ h3 {
   align-items: center;
   gap: 24px;
   padding: 24px clamp(18px, 5vw, 70px);
-  color: var(--ink);
-  background: var(--paper);
-  border-bottom: 1px solid var(--line);
+  color: #ffffff;
+  background: var(--blue);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .intro-band p {
   margin: 0;
   max-width: 900px;
+  color: #ffffff;
   font-family: inherit;
   font-size: clamp(1.12rem, 2vw, 1.75rem);
   font-weight: 600;
