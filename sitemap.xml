@@ -3,12 +3,10 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sipscocktailcatering.com/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-06-22</lastmod>
     <image:image>
-      <image:loc>https://sipscocktailcatering.com/assets/social/sips-og-card.jpg</image:loc>
-      <image:caption>Sips Cocktail Catering business card with logo, phone number, website, and proposal contact.</image:caption>
+      <image:loc>https://sipscocktailcatering.com/assets/social/sips-og-card-email.jpg</image:loc>
+      <image:caption>Sips Cocktail Catering business card with logo, phone number, website, and email.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-11.jpg</image:loc>
@@ -16,15 +14,59 @@
     </image:image>
     <image:image>
       <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-modern-bar.jpg</image:loc>
-      <image:caption>Modern indoor mobile bar setup for a Bend event.</image:caption>
+      <image:caption>Modern indoor mobile bar setup with beer, wine, and welcome signage for a Bend event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-wood-bar.jpg</image:loc>
+      <image:caption>Wood mobile bar stocked with beer, wine, and event bartending supplies.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-glow-wall-wide.jpg</image:loc>
       <image:caption>Central Oregon fundraiser bar catering setup with a glowing bottle wall.</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-glow-wall-close.jpg</image:loc>
+      <image:caption>Themed mobile bar catering with pink lighting, bottle wall, and Sips cocktail menu.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-02.jpg</image:loc>
+      <image:caption>Sips bartender behind an outdoor mobile bar setup at a Central Oregon venue.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-03.jpg</image:loc>
+      <image:caption>Wine bottles and Sips Cocktail Catering sign arranged on an event bar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-04.jpg</image:loc>
+      <image:caption>Outdoor Sips mobile bartending service at a Central Oregon event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-05.jpg</image:loc>
+      <image:caption>Outdoor mobile bar detail for a private Central Oregon event.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-06.jpg</image:loc>
+      <image:caption>Handwritten signature cocktail menu for Sips mobile bar catering.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-07.jpg</image:loc>
+      <image:caption>Sips branded cocktail menu and glassware for event bartending service.</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-08.jpg</image:loc>
       <image:caption>Sips event bartenders behind a stocked mobile bar in Central Oregon.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-09.jpg</image:loc>
+      <image:caption>Sips mobile bar with cocktail ingredients and event menu display.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-12.jpg</image:loc>
+      <image:caption>Sips event bar decor with flowers for private party cocktail catering.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://sipscocktailcatering.com/assets/gallery/sips-16.jpg</image:loc>
+      <image:caption>Sips event bartending team at a themed mobile bar.</image:caption>
     </image:image>
   </url>
 </urlset>
